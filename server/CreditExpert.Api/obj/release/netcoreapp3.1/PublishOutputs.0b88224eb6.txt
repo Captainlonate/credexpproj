@@ -1,9 +1,0 @@
-C:\app\CreditExpert.Api.exe
-C:\app\appsettings.Development.json
-C:\app\appsettings.json
-C:\app\CreditExpert.Api.dll
-C:\app\CreditExpert.Api.deps.json
-C:\app\CreditExpert.Api.runtimeconfig.json
-C:\app\CreditExpert.Api.pdb
-C:\app\CreditExpert.Dtos.dll
-C:\app\CreditExpert.Dtos.pdb

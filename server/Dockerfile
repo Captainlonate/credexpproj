@@ -24,5 +24,5 @@ WORKDIR /app
 COPY --from=build /app ./
 ENTRYPOINT ["dotnet", "CreditExpert.Api.dll"]
 
-# docker build -t simulationapi .
-# docker run -it --rm -p 5000:80 --name shapessimulationapi simulationapi
+# docker build -t simulation-image .
+# docker run -it --rm -p 5000:80 --name shapessimulationapi simulation-image

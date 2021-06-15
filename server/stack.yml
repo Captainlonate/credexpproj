@@ -1,0 +1,25 @@
+version: '3.3'
+
+services:
+  simulationproxy:
+    image: jwilder/nginx-proxy
+    container_name: simulationproxy
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+    ports:
+      - "80:80"
+      - "443:443"
+    networks:
+      - simulationnet
+
+  shapessimulationapi:
+    image: simulation-image
+    container_name: shapessimulationapi
+    restart: on-failure
+    environment:
+      - VIRTUAL_HOST=simulatorapi.pirated.technology
+    networks:
+      - simulationnet
+    
+networks:
+  simulationnet:

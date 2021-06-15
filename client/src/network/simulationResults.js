@@ -24,7 +24,7 @@ export const getSimulationResults = async (stepCount) => {
   let results = { data: null, error: null }
 
   try {
-    const serverResponse = await fetch(`${process.env.REACT_APP_API_URL}?steps=${stepCount}`)
+    const serverResponse = await fetch(`${process.env.REACT_APP_API_URL}/antsimulation?steps=${stepCount}`)
     results.data = await serverResponse.json()
   } catch (ex) {
     console.log('Could not fetch simulation results', ex.message)

@@ -32,7 +32,6 @@ export const BoxContainer = styled.div`
 `
 
 export const Box = styled.div`
-  /* flex: 1; */
   display: flex;
   flex-direction: column;
   justify-content: center;

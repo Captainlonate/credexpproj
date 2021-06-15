@@ -10,3 +10,7 @@ export const ShapesAndColorsPageWrapper = styled.div`
   height: 100vh;
   overflow: hidden;
 `
+
+export const ErrorMessage = styled.h3`
+  color: red;
+`

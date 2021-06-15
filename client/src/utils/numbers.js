@@ -14,3 +14,5 @@ export const halfInt = (number) => Math.floor(number / 2)
 export const getValueBetween = (value1, value2, percent) => (
   value1 + ((value2 - value1) * percent)
 )
+
+export const twoDecimalPlaces = (num) => Math.round(num * 100) / 100

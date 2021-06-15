@@ -23,3 +23,9 @@ export const SimulationPageWrapper = styled.div`
   height: 100vh;
   background-color: ${(props) => props.theme.background};
 `
+
+export const TopRight = styled.div`
+  position: fixed;
+  top: 0;
+  right: 0;
+`

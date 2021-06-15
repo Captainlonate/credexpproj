@@ -1,0 +1,9 @@
+C:\Users\Sarat\Documents\code\creditexpert\server\CreditExpert.Dtos\bin\release\netstandard2.0\CreditExpert.Dtos.deps.json
+C:\Users\Sarat\Documents\code\creditexpert\server\CreditExpert.Dtos\bin\release\netstandard2.0\CreditExpert.Dtos.dll
+C:\Users\Sarat\Documents\code\creditexpert\server\CreditExpert.Dtos\bin\release\netstandard2.0\CreditExpert.Dtos.pdb
+C:\Users\Sarat\Documents\code\creditexpert\server\CreditExpert.Dtos\obj\release\netstandard2.0\CreditExpert.Dtos.csproj.AssemblyReference.cache
+C:\Users\Sarat\Documents\code\creditexpert\server\CreditExpert.Dtos\obj\release\netstandard2.0\CreditExpert.Dtos.AssemblyInfoInputs.cache
+C:\Users\Sarat\Documents\code\creditexpert\server\CreditExpert.Dtos\obj\release\netstandard2.0\CreditExpert.Dtos.AssemblyInfo.cs
+C:\Users\Sarat\Documents\code\creditexpert\server\CreditExpert.Dtos\obj\release\netstandard2.0\CreditExpert.Dtos.csproj.CoreCompileInputs.cache
+C:\Users\Sarat\Documents\code\creditexpert\server\CreditExpert.Dtos\obj\release\netstandard2.0\CreditExpert.Dtos.dll
+C:\Users\Sarat\Documents\code\creditexpert\server\CreditExpert.Dtos\obj\release\netstandard2.0\CreditExpert.Dtos.pdb

@@ -1,28 +1,28 @@
 import { useState } from 'react'
-import {
-  ShapesAndColorsPageWrapper,
-  ErrorMessage,
-} from './styles'
+import { ShapesAndColorsPageWrapper, ErrorMessage, } from './styles'
 import FloatingUI from './FloatingUI'
-import DraggableShape from './DraggableShape'
+import FullScreenShapeDragger from './FullScreenShapeDragger'
 import withColorsAndShapes from '../../../network/hoc/withColorsAndShapes'
 import Color from '../../../utils/Color/Color'
+import { findByLabel } from '../../../utils/array'
 import { buildSpectrumFromColors } from '../../../utils/Color/color-utils'
 import chroma from 'chroma-js'
+
+const convertColorsToSpectrum = (colorsList = []) => {
+  const colors = colorsList.map((color) => new Color(...chroma(color.value).rgb()))
+  return buildSpectrumFromColors(colors)
+}
 
 const ShapesAndColorsPage = ({ shapes, colors, fetching, error }) => {
   const [chosenShape, setChosenShape] = useState(null)
   const [colorSpectrum, setColorSpectrum] = useState([])
   
   const handleChooseColors = (newColorsList) => {
-    const colors = newColorsList.map((color) => new Color(...chroma(color.value).rgb()))
-    const spectrum = buildSpectrumFromColors(colors)
-    setColorSpectrum(spectrum)
+    setColorSpectrum(convertColorsToSpectrum(newColorsList))
   }
 
   const handleChooseShape = (newShape) => {
-    const shape = shapes.find(({ label }) => label === newShape.label)
-    setChosenShape(shape)
+    setChosenShape(findByLabel(newShape.label, shapes))
   }
 
   return (
@@ -39,8 +39,7 @@ const ShapesAndColorsPage = ({ shapes, colors, fetching, error }) => {
               onChooseShape={handleChooseShape}
               onChooseColors={handleChooseColors}
             />
-
-            <DraggableShape shape={chosenShape} colorSpectrum={colorSpectrum} />
+            <FullScreenShapeDragger shape={chosenShape} colorSpectrum={colorSpectrum} />
           </>
         )
       }

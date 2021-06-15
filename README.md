@@ -1,4 +1,17 @@
-# Credit Expert
+# Credit Expert Interview Project
+
+[Live Here](www.google.com)
+
+## This Repository
+
+```
+/client
+  - Contains a create-react-app that displays the frontend to both questions
+/server
+  - Contains a single ASP.NET Core webapi that serves the endpoints for both questions
+```
+
+I've added a README to each project, so just click the folder to learn more about each part.
 
 ## Question 1) Shapes
 Create a web page using React to display a draggable shape in the middle of the screen.  The shape should change color as it moves from the center to the edge of the screen.

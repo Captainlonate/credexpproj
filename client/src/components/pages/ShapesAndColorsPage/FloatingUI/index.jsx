@@ -1,12 +1,14 @@
+import Select from 'react-select'
 import {
   FloatingUIShell,
   ControlSection,
   ControlLabel,
   coloredSelectStyles,
 } from './styles'
-import Select from 'react-select'
 
 const FloatingUI = ({ shapes, colors, onChooseShape, onChooseColors }) => {
+  // react-select expects an array of objects with { label, value }
+  // when it creates it's <option>'s
   const shapeOptions = shapes.map(({ label }) => ({ label, value: label }))
   const colorOptions = colors.map(({ label, value }) => ({ label, value, color: value }))
 
@@ -14,11 +16,7 @@ const FloatingUI = ({ shapes, colors, onChooseShape, onChooseColors }) => {
     <FloatingUIShell>
       <ControlSection>
         <ControlLabel>Shape</ControlLabel>
-        <Select
-          options={shapeOptions}
-          // defaultValue={shapeOptions[0]}
-          onChange={onChooseShape}
-        />
+        <Select options={shapeOptions} onChange={onChooseShape} />
       </ControlSection>
       <ControlSection>
         <ControlLabel>Colors</ControlLabel>
@@ -27,7 +25,6 @@ const FloatingUI = ({ shapes, colors, onChooseShape, onChooseColors }) => {
           closeMenuOnSelect={false}
           isMulti
           styles={coloredSelectStyles}
-          // defaultValue={}
           onChange={onChooseColors}
         />
       </ControlSection>

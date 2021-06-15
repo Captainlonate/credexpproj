@@ -1,4 +1,4 @@
-import { SimulationPageWrapper, } from './common-styles'
+import { SimulationPageWrapper, TopRight } from './common-styles'
 import AntProvider, { useAntContext } from './state/ant-context'
 import ACTION_TYPES from './state/ant-actions'
 import { VIEWS } from './state/ant-reducer'
@@ -6,6 +6,7 @@ import LoadingView from './LoadingView'
 import EnterStepsView from './EnterStepsView/index'
 import SimulationView from './SimulationView/index'
 import { getSimulationResults } from '../../../network/simulationResults'
+import HomeButton from '../../HomeButton'
 
 const SimulationPage = () => {
   const [antState, dispatchAntState] = useAntContext()
@@ -29,6 +30,7 @@ const SimulationPage = () => {
 
   return (
     <SimulationPageWrapper>
+      <TopRight><HomeButton /></TopRight>
       {
         (antState.activeView === VIEWS.SET_STEPS) && (
           <EnterStepsView onSubmit={handleSubmitSteps} />

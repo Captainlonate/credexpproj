@@ -1,13 +1,11 @@
 C:\Users\Sarat\Documents\code\creditexpert\server\CreditExpert.Api\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\Sarat\Documents\code\creditexpert\server\CreditExpert.Api\bin\Debug\netcoreapp3.1\appsettings.json
-C:\Users\Sarat\Documents\code\creditexpert\server\CreditExpert.Api\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Users\Sarat\Documents\code\creditexpert\server\CreditExpert.Api\bin\Debug\netcoreapp3.1\CreditExpert.Api.exe
 C:\Users\Sarat\Documents\code\creditexpert\server\CreditExpert.Api\bin\Debug\netcoreapp3.1\CreditExpert.Api.deps.json
 C:\Users\Sarat\Documents\code\creditexpert\server\CreditExpert.Api\bin\Debug\netcoreapp3.1\CreditExpert.Api.runtimeconfig.json
 C:\Users\Sarat\Documents\code\creditexpert\server\CreditExpert.Api\bin\Debug\netcoreapp3.1\CreditExpert.Api.runtimeconfig.dev.json
 C:\Users\Sarat\Documents\code\creditexpert\server\CreditExpert.Api\bin\Debug\netcoreapp3.1\CreditExpert.Api.dll
 C:\Users\Sarat\Documents\code\creditexpert\server\CreditExpert.Api\bin\Debug\netcoreapp3.1\CreditExpert.Api.pdb
-C:\Users\Sarat\Documents\code\creditexpert\server\CreditExpert.Api\obj\Debug\netcoreapp3.1\CreditExpert.Api.csprojAssemblyReference.cache
 C:\Users\Sarat\Documents\code\creditexpert\server\CreditExpert.Api\obj\Debug\netcoreapp3.1\CreditExpert.Api.AssemblyInfoInputs.cache
 C:\Users\Sarat\Documents\code\creditexpert\server\CreditExpert.Api\obj\Debug\netcoreapp3.1\CreditExpert.Api.AssemblyInfo.cs
 C:\Users\Sarat\Documents\code\creditexpert\server\CreditExpert.Api\obj\Debug\netcoreapp3.1\CreditExpert.Api.csproj.CoreCompileInputs.cache
@@ -21,3 +19,5 @@ C:\Users\Sarat\Documents\code\creditexpert\server\CreditExpert.Api\obj\Debug\net
 C:\Users\Sarat\Documents\code\creditexpert\server\CreditExpert.Api\bin\Debug\netcoreapp3.1\CreditExpert.Dtos.dll
 C:\Users\Sarat\Documents\code\creditexpert\server\CreditExpert.Api\bin\Debug\netcoreapp3.1\CreditExpert.Dtos.pdb
 C:\Users\Sarat\Documents\code\creditexpert\server\CreditExpert.Api\obj\Debug\netcoreapp3.1\CreditExpert.Api.csproj.CopyComplete
+C:\Users\Sarat\Documents\code\creditexpert\server\CreditExpert.Api\obj\Debug\netcoreapp3.1\CreditExpert.Api.csproj.AssemblyReference.cache
+C:\Users\Sarat\Documents\code\creditexpert\server\CreditExpert.Api\obj\Debug\netcoreapp3.1\scopedcss\bundle\CreditExpert.Api.styles.css

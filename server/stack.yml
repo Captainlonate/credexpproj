@@ -6,6 +6,10 @@ services:
     container_name: simulationproxy
     volumes:
       - /var/run/docker.sock:/tmp/docker.sock:ro
+      - certs:/etc/nginx/certs:ro
+      - vhost:/etc/nginx/vhost.d
+      - html:/usr/share/nginx/html
+      - conf:/etc/nginx/conf.d
     ports:
       - "80:80"
       - "443:443"
@@ -16,10 +20,31 @@ services:
     image: simulation-image
     container_name: shapessimulationapi
     restart: on-failure
+    ports:
+      - "5000:5000"
+      - "5001:5001"
     environment:
       - VIRTUAL_HOST=simulatorapi.pirated.technology
+      - LETSENCRYPT_HOST=simulatorapi.pirated.technology
     networks:
       - simulationnet
-    
+  
+  nginx-proxy-companion:
+    image: jrcs/letsencrypt-nginx-proxy-companion
+    volumes:
+      - vhost:/etc/nginx/vhost.d
+      - html:/usr/share/nginx/html
+      - conf:/etc/nginx/conf.d
+      - certs:/etc/nginx/certs:rw
+      - acme:/etc/acme.sh
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+
+volumes:
+  certs
+  vhost
+  html
+  acme
+  conf
+
 networks:
   simulationnet:

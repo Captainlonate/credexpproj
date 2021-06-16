@@ -1,24 +1,27 @@
 # Credit Expert Interview Project
 
-[Live Here](www.google.com)
+[Click this to see the site](https://simulation.pirated.technology/)
 
-## This Repository
+----
 
-```
-/client
-  - Contains a create-react-app that displays the frontend to both questions
-/server
-  - Contains a single ASP.NET Core webapi that serves the endpoints for both questions
-```
+__PLEASE READ THIS PART:__
 
-I've added a README to each project, so just click the folder to learn more about each part.
+I've added a README within `/client` and `/server`.
 
-## Question 1) Shapes
+Please go into those folders to read the notes I wrote for you.
+
+----
+
+__YOU DON'T NEED TO READ THIS PART THOUGH:__
+
+## The Prompt
+
+### Question 1) Shapes
 Create a web page using React to display a draggable shape in the middle of the screen.  The shape should change color as it moves from the center to the edge of the screen.
 Allow user to choose the type of shape and a sequence of changing colors from a dropdown list. The list should be populated on page load via API call to a web service written in C#/.NET Core.
 
  
-## Question 2) Ant
+### Question 2) Ant
 An ant is sitting on a grid of white and black squares.
 
 Initially the grid is all white and the ant faces right. At each step it does the following:

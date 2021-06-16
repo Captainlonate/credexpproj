@@ -10,11 +10,25 @@ I've added a README within `/client` and `/server`.
 
 Please go into those folders to read the notes I wrote for you.
 
+Feel free to email any questions to: `develop.nathan@gmail.com`
+
 ----
 
-<img src="client/src/images/home_page_demo.png" width="300" height="300" />
-<img src="client/src/images/11000_steps.png" width="300" height="300" />
-<img src="client/src/images/shapes_demo.png" width="300" height="300" />
+<table>
+  <tbody>
+    <tr>
+      <td><img src="client/src/images/home_page_demo.png" width="300" height="300" /></td>
+      <td><img src="client/src/images/11000_steps.png" width="300" height="300" /></td>
+    </tr>
+    <tr>
+      <td><img src="client/src/images/shapes_demo.png" width="300" height="300" /></td>
+      <td><img src="client/src/images/25_steps.png" width="300" height="300" /></td>
+    </tr>
+  </tbody>
+</table>
+
+
+
 
 ----
 

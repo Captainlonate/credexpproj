@@ -36,9 +36,9 @@ AWS Linux Server, 3 docker containers
   - letsencrypt cert automation
 ```
 
-# My Explanation (if you care)
+# My Explanation
 
-_This is long so I'll understand if you don't read it all._
+_You don't have to read all this, but it explains my solution and why I chose it._
 
 There were 2 challenges I had to figure out:
 

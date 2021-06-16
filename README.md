@@ -1,4 +1,4 @@
-# Credit Expert Interview Project
+# Ant Simulator & Draggable Shapes
 
 [Click this to see the site](https://simulation.pirated.technology/)
 

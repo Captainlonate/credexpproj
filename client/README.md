@@ -1,9 +1,11 @@
 # Shapes and Simulation React
 
 ```
-This is the ReactJS portion of the assignment. I spent about 85% of my time on this (leaving only about 10% for the API, and 5% for hosting).
+This is the ReactJS portion of the assignment. I spent about 85%
+of my time on this (leaving only about 10% for the API, and 5% for hosting).
 
-There's so much I'd like to show and explain. But, I'll try to be respectful of your time.
+There's so much I'd like to show and explain. But, I'll try to
+be respectful of your time.
 ```
 
 ## Ant Simulator
@@ -22,6 +24,7 @@ There's so much I'd like to show and explain. But, I'll try to be respectful of 
     - The canvas resizes itself to fill it's parent, but remains a square and the drawings are not skewed.
   - I only draw the "dirty" squares that changed, not the entire board.
     - That's why even at 20,000 steps, you don't see a performance hit.
+    - Drawing the entire board would have meant drawing 250,000, 60 frames per second. Ouch!
 - The size of the grid is based on how many total steps.
   - Notice the difference between 15, 500, 10000, 15000 steps
 - The grid lines are green when large cells need separated. They are white when cells are small.

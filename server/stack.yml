@@ -33,8 +33,7 @@ services:
     image: jrcs/letsencrypt-nginx-proxy-companion
     container_name: nginx-proxy-companion
     depends_on:
-      - nginx-proxy
-      - docker-gen
+      - simulationproxy
     restart: always
     volumes:
       - vhost:/etc/nginx/vhost.d

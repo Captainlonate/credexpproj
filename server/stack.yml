@@ -40,11 +40,11 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock:ro
 
 volumes:
-  certs
-  vhost
-  html
-  acme
-  conf
+  certs:
+  vhost:
+  html:
+  acme:
+  conf:
 
 networks:
   simulationnet:

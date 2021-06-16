@@ -31,6 +31,11 @@ services:
   
   nginx-proxy-companion:
     image: jrcs/letsencrypt-nginx-proxy-companion
+    container_name: nginx-proxy-companion
+    depends_on:
+      - nginx-proxy
+      - docker-gen
+    restart: always
     volumes:
       - vhost:/etc/nginx/vhost.d
       - html:/usr/share/nginx/html
@@ -38,6 +43,8 @@ services:
       - certs:/etc/nginx/certs:rw
       - acme:/etc/acme.sh
       - /var/run/docker.sock:/var/run/docker.sock:ro
+    networks:
+      - simulationnet
 
 volumes:
   certs:

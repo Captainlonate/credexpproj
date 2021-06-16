@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { ShapesAndColorsPageWrapper, ErrorMessage, } from './styles'
+import { ShapesAndColorsPageWrapper, ErrorMessage, TopMiddle } from './styles'
 import FloatingUI from './FloatingUI'
 import FullScreenShapeDragger from './FullScreenShapeDragger'
 import withColorsAndShapes from '../../../network/hoc/withColorsAndShapes'
@@ -7,6 +7,7 @@ import Color from '../../../utils/Color/Color'
 import { findByLabel } from '../../../utils/array'
 import { buildSpectrumFromColors } from '../../../utils/Color/color-utils'
 import chroma from 'chroma-js'
+import HomeButton from '../../HomeButton'
 
 const convertColorsToSpectrum = (colorsList = []) => {
   const colors = colorsList.map((color) => new Color(...chroma(color.value).rgb()))
@@ -27,6 +28,9 @@ const ShapesAndColorsPage = ({ shapes, colors, fetching, error }) => {
 
   return (
     <ShapesAndColorsPageWrapper>
+      <TopMiddle>
+        <HomeButton />
+      </TopMiddle>
       {
         error && (<ErrorMessage>{error}</ErrorMessage>)
       }

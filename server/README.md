@@ -36,16 +36,16 @@ AWS Linux Server, 3 docker containers
   - letsencrypt cert automation
 ```
 
-# My Explanation
+# My Solution (API)
 
 _You don't have to read all this, but it explains my solution and why I chose it._
 
 There were 2 challenges I had to figure out:
 
-1) Returning something small-ish to the front-end, even if I simulated 20,000 steps
-2) Determing an appropriate grid size
+1) [Returning something small, even if I simulated 20,000 steps](#challenge-1-what-to-return)
+2) [Determing an appropriate grid size](#challenge-2-the-grid-size)
 
-__The Response__
+## Challenge 1 What to return
 
 The requirement was that the server must return something that the front-end can use to display each step.
 
@@ -75,4 +75,16 @@ The indeces (0-3) match up with the numbers.
 
 Because this is an interview, I also included the final, completed board `completeBoard`, even though I never used it anywhere. It's just a 2d array where `0` means `White`, and `1` means `Black`.
 
-__The Grid Size__
+## Challenge 2 The Grid Size
+
+If you only simulate 15 steps, I don't want to show a 100x100 board with tiny cells.
+
+If you simulate 15,000 steps, a 9x9 board won't cut it.
+
+So I couldn't use the same size board for all step counts.
+
+For the first ~10,000 steps, the grid can be pretty small (about 100x100). At about 10,200 the ant starts to dig a straight line going top and left. The minimum board size quickly doubles, triples, etc.
+
+I predetermined the grid size based on the number of steps. I hardcoded these values and don't accept a step count over 20,000 (which was already so big that I really can't display it).
+
+If I needed the board to be dynamically sized, I would use a Dictionary to store the value of every cell encountered. Then, at the end I would construct the array based on the `min` and `max` `x` and `y` values.

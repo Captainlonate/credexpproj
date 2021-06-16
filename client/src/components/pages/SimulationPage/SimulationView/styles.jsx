@@ -18,7 +18,7 @@ export const BackButtonBar = styled.section`
 `
 
 export const CanvasSection = styled.section`
-  padding: 2rem;
+  padding: 0 2rem 2rem;
   flex: 1;
   display: flex;
 `

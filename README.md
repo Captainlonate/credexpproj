@@ -12,7 +12,13 @@ Please go into those folders to read the notes I wrote for you.
 
 ----
 
-__YOU DON'T NEED TO READ THIS PART THOUGH:__
+<img src="client/src/images/home_page_demo.png" width="300" height="300" />
+<img src="client/src/images/11000_steps.png" width="300" height="300" />
+<img src="client/src/images/shapes_demo.png" width="300" height="300" />
+
+----
+
+__YOU DON'T NEED TO READ THIS PART:__
 
 ## The Prompt
 

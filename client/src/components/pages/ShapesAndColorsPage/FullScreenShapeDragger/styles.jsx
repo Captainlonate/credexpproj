@@ -57,6 +57,7 @@ export const InfoBox = styled.div`
   text-align: center;
   color: white;
   font-size: 3.5rem;
+  user-select: none;
   // Pushed up to get out of the shape's way (so you can see both)
   padding-bottom: 14rem;
 `
@@ -67,6 +68,7 @@ export const NoShape = styled.div`
   color: white;
   font-size: 2.5rem;
   padding: 0 3rem;
+  user-select: none;
 `
 
 export const DraggableContainer = styled.div`

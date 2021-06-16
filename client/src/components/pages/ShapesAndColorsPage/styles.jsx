@@ -11,6 +11,13 @@ export const ShapesAndColorsPageWrapper = styled.div`
   overflow: hidden;
 `
 
+export const TopMiddle = styled.div`
+  position: absolute;
+  top: 1vw;
+  left: 20vw;
+  z-index: 10;
+`
+
 export const ErrorMessage = styled.h3`
   color: red;
 `

@@ -26,6 +26,6 @@ export const SimulationPageWrapper = styled.div`
 
 export const TopRight = styled.div`
   position: fixed;
-  top: 0;
-  right: 0;
+  top: 1rem;
+  right: 1rem;
 `

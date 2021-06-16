@@ -17,7 +17,7 @@ const isValidStepValue = isValidRange(1, 20000)
   to enter a number and start running the simulation.
 */
 const EnterStepsView = ({ onSubmit }) => {
-  const [number, setNumber] = useState(1)
+  const [number, setNumber] = useState(25)
   const [errorMessage, setErrorMessage] = useState(null)
 
   const validateBeforeSubmit = useCallback(() => {

@@ -3,11 +3,12 @@ import chroma from 'chroma-js'
 
 export const FloatingUIShell = styled.div`
   position: fixed;
-  top: 2vw;
+  top: 3vw;
   left: 2vw;
   padding: 1vw;
   z-index: 5;
-  min-width: 30rem;
+  min-width: 25rem;
+  max-width: 36rem;
 `
 
 export const ControlsContainer = styled.div`
@@ -31,9 +32,11 @@ export const ControlSection = styled.div`
 // and set a hover color, text colors, background color, and color preview
 // This is from the react-select documentation
 export const coloredSelectStyles = {
+  // Background color of the actual select
   control: styles => ({ ...styles, backgroundColor: 'white' }),
   option: (styles, { data, isDisabled, isFocused, isSelected }) => {
     const color = chroma(data.color);
+    // Styling the options as they appear in the dropdown menu
     return {
       ...styles,
       backgroundColor: isDisabled
@@ -59,6 +62,7 @@ export const coloredSelectStyles = {
   },
   multiValue: (styles, { data }) => {
     const color = chroma(data.color);
+    // Background color of chosen tags
     return {
       ...styles,
       backgroundColor: color.alpha(0.1).css(),
@@ -66,11 +70,15 @@ export const coloredSelectStyles = {
   },
   multiValueLabel: (styles, { data }) => ({
     ...styles,
+    // Text color of chosen tags
     color: data.color,
+    fontSize: '90%'
   }),
   multiValueRemove: (styles, { data }) => ({
     ...styles,
+    // Color the X button to remove
     color: data.color,
+    // Hover color of the X button to remove
     ':hover': {
       backgroundColor: data.color,
       color: 'white',
